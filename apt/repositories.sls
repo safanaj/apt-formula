@@ -47,7 +47,7 @@
 {% endif %}
 
 {% if r_arch != '' or r_opts != '' %}
-  {% set r_options = '[' ~ ([r_arch, r_opts]|reject|join(' ')) ~ ' ]' %}
+  {% set r_options = '[' ~ ([r_arch, r_opts]|select|join(' ')) ~ ' ]' %}
 {% else %}
   {% set r_options = '' %}
 {% endif %}
