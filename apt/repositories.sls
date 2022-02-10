@@ -87,5 +87,5 @@
 {% if repositories %}
 apt.refresh_db:
   module.run:
-    - name: pkg.refresh_db
+    - pkg.refresh_db:
 {% endif %}
