@@ -75,6 +75,7 @@
     - keyid: {{ args.keyid }}
     - keyserver: {{ r_keyserver }}
     {% endif %}
+    - aptkey: False
     - clean_file: true
     - refresh: False
     - refresh_db: False
