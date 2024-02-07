@@ -75,7 +75,9 @@
     - keyid: {{ args.keyid }}
     - keyserver: {{ r_keyserver }}
     {% endif %}
+    {% if 'signed-by=' in r_options %}
     - aptkey: False
+    {% endif %}
     - clean_file: true
     - refresh: False
     - refresh_db: False
